@@ -6,7 +6,7 @@ sql = "INSERT INTO event VALUES"
 values =  [] 
 
 for i, row in df.iterrows():
-    values.append(f"({row['event_id']}, {row['event_date']}, {row['customer_id']},"
+    values.append(f"({row['event_id']}, '{row['event_date']}', {row['customer_id']},"
     f"{row['is_attend']}, {row['group_ids']}, {row['teacher_ids']},"
     f"{row['attendance_id']})")
 
